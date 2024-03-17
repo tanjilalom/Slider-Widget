@@ -28,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var _value = 30.0;
+  var _value = 10.0;
 
   @override
   Widget build(BuildContext context) {
@@ -45,8 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 50,),
             Slider(
                 value: _value,
-                min: 20,
-                max: 100,
+                min: 10,
+                max: 50,
                 label: _value.round().toString(),
                 divisions: 4,
                 onChanged: (value) {
